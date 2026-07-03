@@ -19,20 +19,21 @@
 
 ## 🚀 快速开始
 
-### 方式一:本地一键运行(Windows)
+### 方式一:Windows 一键运行(最简单)
 
-本项目自带 PHP 运行环境,开箱即用:
+只需两步,装 PHP + 启动:
 
-1. 下载/克隆本仓库
-2. 双击 `一键启动.bat`
-3. 浏览器自动打开 http://localhost:8000
+1. 双击 `安装PHP.bat`(自动下载并配置 PHP,只需做一次)
+2. 双击 `一键启动.bat`(启动服务,浏览器自动打开)
 
 > 后台地址:http://localhost:8000/admin.php  
 > 默认密码:`admin123`(请立即修改!)
+>
+> 想让别人也能访问?双击 `一键启动_公网版.bat`,配合 cloudflared 生成临时公网地址。
 
 ### 方式二:部署到服务器
 
-1. 将所有文件上传到 PHP 虚拟主机/云服务器
+1. 将所有文件上传到 PHP 虚拟主机/云服务器(无需上传 `php/` 目录)
 2. 修改 `config.php` 中的 `SITE_URL` 为你的域名
 3. 设置 `uploads/` 和 `data/` 目录可写权限
 4. 访问域名即可使用
@@ -78,7 +79,7 @@
 
 ```
 .
-├── php/                  # PHP 运行环境(Windows 版,可选)
+├── php/                  # PHP 运行环境(安装后自动生成,无需提交)
 ├── uploads/              # 生成的网页文件(自动创建)
 ├── data/                 # SQLite 数据库(自动创建)
 ├── index.php             # 首页(上传/生成网页)
@@ -87,6 +88,7 @@
 ├── config.php            # 配置文件
 ├── functions.php         # 函数库
 ├── db.php                # 数据库初始化
+├── 安装PHP.bat         # 一键安装 PHP 环境(Windows)
 ├── 一键启动.bat        # 本地启动(Windows)
 ├── 一键启动_公网版.bat   # 公网启动(需 cloudflared)
 └── README.md
