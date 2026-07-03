@@ -2,6 +2,8 @@
 
 > 让 AI 写的网页,同学/朋友也能看到。粘贴代码 → 生成链接 → 发出去,完事。
 
+![项目预览](preview.png)
+
 [![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=flat-square)
 [![SQLite](https://img.shields.io/badge/SQLite-3-003B57?style=flat-square)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
